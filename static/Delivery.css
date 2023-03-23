@@ -1,0 +1,54 @@
+  .body{
+      height: 100vh;
+      font-weight: bolder;
+  }
+  .btn{
+      margin: 1rem;
+      background-color: #227078;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:1rem 2rem ;
+      font-size: 18px;
+      border-radius: 10px;
+  }
+  .btn:hover{
+      display:block;
+      background-color:#6EABAF;
+      color: white;
+      font-weight: bolder;
+    }
+
+  .model-title{
+      background-color: #6EABAF;
+      border-radius: 10px 0px 10px 0px;
+      color: white;
+      font-weight: bolder;
+      padding: 0rem 1rem;
+  }
+  a{
+      text-decoration: none;
+      color: #6EABAF;
+  }
+  .title h3{
+      text-align:center;
+      color: #227078;
+      font-weight: bolder;
+      font-size: 3rem;
+      width: 100vw;
+      height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 80rem;
+      margin: 0 auto;
+      padding: 2rem;
+  }
+  .flex-cent{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="../static/pic/favicon.ico">
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/wash.css" type="text/css">
+    <script type="text/javascript" src="../static/js/wash.js"></script>
+    <title>洗衣模式</title>
+    {% load static %}
+</head>
+<body>
+    <div class="title">
+        <h3>洗衣模式</h3>
+    </div>
+<form name='form1' action='/order' method='POST'>
+    {% csrf_token %}
+    <div class="container" id="content">
+        <div class="col-10">
+                        <div class="row">
+                            <div class="wish">
+                                <div class="model-title">
+                                    <div class="model-text">
+                                        洗衣模式
+                                    </div>
+                                </div>
+
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="washmode" id="washmode" value="標準" checked>
+                                                <label class="form-check-label" for="washmode">
+                                                標準
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="washmode" id="washmode" value="精緻洗" >
+                                                <label class="form-check-label" for="washmode">
+                                                精緻洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="washmode" id="washmode" value="柔洗" >
+                                                <label class="form-check-label" for="washmode">
+                                                柔洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="washmode" id="washmode" value="快洗" >
+                                                <label class="form-check-label" for="washmode">
+                                                快洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="dry">
+                                <div class="model-title">
+                                    <div class="model-text">
+                                        乾燥模式
+                                    </div>
+                                </div>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="drymode" id="option1" value="日曬" checked>
+                                                <label class="form-check-label" for="option1">
+                                                日曬
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="drymode" id="option2" value="低溫烘乾" >
+                                                <label class="form-check-label" for="option2">
+                                                低溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="drymode" id="option3" value="中溫烘乾" >
+                                                <label class="form-check-label" for="option3">
+                                                中溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="drymode" id="option4" value="高溫烘乾" >
+                                                <label class="form-check-label" for="option4">
+                                                高溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="fold">
+                                <div class="model-title">
+                                    <div class="model-text">
+                                        摺衣模式
+                                    </div>
+                                </div>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="foldmode" id="option1" value="不折" >
+                                                <label class="form-check-label" for="option1">
+                                                不折
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="foldmode" id="option2" value="機器人" checked>
+                                                <label class="form-check-label" for="option2">
+                                                機器人
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="number">
+                                <div class="model-title">
+                                    <div class="model-text">
+                                        袋數
+                                    </div>
+                                </div>
+                                <div class=col style="margin: 10px 0;">
+                                        <input type='button' value='-' class='qtyminus' field='quantity' /><!--
+                                        <form>--><input type='text' name='quantity' value='1' class='qty' /><!--
+                                    --><input type='button' value='+' class='qtyplus' field='quantity' />
+                                </div>
+                            </div>
+                            <div class="small">
+                                <div class="model-title">
+                                    <div class="model-text">
+                                        香味
+                                    </div>
+                                </div>
+                                <div class=col style="margin: 10px 0;">
+                                        <select class="custom-select" name="smellmode">
+                                            <option value="無香味" class="choose" selected >無香味</option>
+                                            {% if sumPrice >= 50 %}
+                                            <option value="薰衣草" class="choose">薰衣草</option>
+                                            {% else %}
+                                            <option value="薰衣草" class="choose" disabled>薰衣草</option>
+                                            {% endif %}
+
+                                            {% if sumPrice >= 500 %}
+                                            <option value="玫瑰" class="choose">玫瑰</option>
+                                            {% else %}
+                                            <option value="玫瑰" class="choose" disabled>玫瑰</option>
+                                            {% endif %}
+
+                                            {% if sumPrice >= 1500 %}
+                                            <option value="小蒼蘭" class="choose">小蒼蘭</option>
+                                            {% else %}
+                                            <option value="小蒼蘭" class="choose" disabled>小蒼蘭</option>
+                                            {% endif %}
+
+                                            {% if sumPrice >= 3000 %}
+                                            <option value="梔子花" class="choose">梔子花</option>
+                                            {% else %}
+                                            <option value="梔子花" class="choose" disabled>梔子花</option>
+                                            {% endif %}
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+    </div>
+    <div class="flex-cent">
+        <a href="/"><button type="button" class="btn">取消，回首頁</button></a>
+        <input type="submit" value="確認" class="btn">
+    </div>
+</form>
+</body>
+</html>

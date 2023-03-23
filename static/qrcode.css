@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-cent{
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #227078;
+    font-weight: bolder;
+    font-size: 5rem;
+    text-align: center;
+    width: 100vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #6EABAF;
+}
+
+p{
+    font-size: 18px;
+    padding: 2rem 9rem;
+}
+
+.btn{
+    background-color: #6EABAF;
+    color: white;
+    padding:1rem 2rem ;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+.btn:hover{
+    display:block;
+    background-color:#C1DEDF;
+    color: #6EABAF;
+    font-weight: bolder;
+}

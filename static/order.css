@@ -1,0 +1,115 @@
+.body{
+    height: 100vh;
+    font-weight: bolder;
+}
+.title h3{
+    text-align:center;
+    color: #227078;
+    font-weight: bolder;
+    font-size: 4.5rem;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.col-10{
+    background-color: #C1DEDF;
+    min-height: calc(100vh/6);
+    margin:2rem auto;
+    border-radius: 10px;
+    line-height: 25px;
+    font-weight: bolder;
+}
+.row{
+    margin:0.5rem 0;
+    display: flex;
+    justify-content:center;
+}
+
+.btn{
+    margin: auto;
+    background-color: #6EABAF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 2rem ;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.btn:hover{
+    display:block;
+    background-color:#C1DEDF;
+    color: #6EABAF;
+    font-weight: bolder;
+}
+
+.model-title{
+    background-color: #6EABAF;
+    border-radius: 10px 0px 10px 0px;
+    color: white;
+    font-weight: bolder;
+    padding: 0rem 1rem;
+    font-size: 18px;
+}
+.form-check-input{
+    width: 40em;
+    height: 40em;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+.form-check-input:checked{
+    background-color:#6EABAF;
+}
+#myform{
+    margin: 1rem;
+}
+.qty{
+    width: 3rem;
+    text-align: center;
+}
+.custom-select{
+    margin: 1rem;
+}
+.row>.col-6{
+    padding-left: 0;
+}
+.model-title-1{
+    background-color: #6EABAF;
+    border-radius: 10px 0px 10px 0px;
+    color: white;
+    font-weight: bolder;
+    padding: 0rem 1rem;
+    width: 70%;
+    font-size: 18px;
+}
+.col{
+    text-align: center;
+    font-size: 18px;
+}
+.model-text{
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+
+}
+a{
+    text-decoration: none;
+    color: #6EABAF;
+}
+.flex-cent{
+    display: flex;
+    justify-content: center;
+}
+.time-select{
+    margin-top: 0.5rem;
+    font-size: 18px;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+.choose{
+    font-size: 18px;
+}

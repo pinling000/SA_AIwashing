@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family:'Martian Mono', "微軟正黑體","Segoe UI",monospace;
+}
+
+body{
+    background-color: #A3CECF;
+    background-position:center center;
+    background-size: cover;
+}

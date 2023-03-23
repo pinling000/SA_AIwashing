@@ -1,0 +1,80 @@
+
+/* 排版1 */
+.container{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-col{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 4.5rem;
+    color: white;
+}
+
+/* 排版2 阿巴阿巴巴啊啊aaaa*/
+.container-1{
+    width: 100vw;
+    /* height: 70vh; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* max-width: 80rem; */
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #F1FDFF;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#con{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #247B84;
+}
+
+td{
+    padding: 0.8rem 4rem 1.8rem 4rem;
+    text-align: center;
+}
+
+.btn{
+    margin-left: 1rem;
+    font-size: 2.2rem;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #247B84;
+    background-color: #C1DEDF;
+    border: 0.1rem solid #247B84;
+    border-radius: 38px;
+}
+
+.btn a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #247B84;
+    font-weight: bold;
+}
+
+.flex-cent{
+    justify-content: center;
+    display: flex;
+}

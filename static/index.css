@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family:'Martian Mono', "微軟正黑體","Segoe UI",monospace;
+}
+
+body{
+    background-image: url("pic/1.JPG");
+    background-position:center center;
+    background-size: cover;
+}
+
+h1{
+    font-size: 5.4rem;
+    color: #227078;
+    margin-bottom: 5rem;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    /* padding: 2rem; */
+}
+
+/* 排版1 */
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-cent{
+    justify-content: center;
+    align-items: center;
+}
+/* 排版1-1 */
+.flex-col-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-cent-1{
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #227078;
+    color: white;
+    background-color: #227078;
+    border-radius: 38px;
+}
+
+.btn-1{
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 15rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #227078;
+    border-radius: 38px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(206, 222, 243, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* loginu驗證介面 */
+.LINE{
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #227078;
+    color: white;
+    background-color: #00b900;
+    border-radius: 38px;
+}
+
+.LINE:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(206, 222, 243, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.LINE[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+p{
+    font-weight: bold;
+    color: #227078;
+}
+
+.msg{
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #227078;
+    color: white;
+    background-color: #0c1a04;
+    border-radius: 38px;
+}
+
+.msg:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(206, 222, 243, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.msg[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.btn-2{
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #6EABAF;
+    border-radius: 38px;
+    border:4px solid #227078;
+}
+
+.btn-2:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(206, 222, 243, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+    background-color: #227078;
+    border:4px solid #6EABAF;
+}
+
+.btn-2[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/pic/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/style.css" type="text/css">
+    <link rel="stylesheet" href="../../static/detail.css" type="text/css">
+    <title>訂單詳細資訊</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-col">
+            <h1>訂單詳細資訊</h1>
+        </div>
+    </div>
+    <div class="container-1">
+        {% if detail_id %}
+        <table>
+            <tr>
+                <td id="con">訂單編號</td>
+                <td>{{ detail_id.ORDID }}</td>
+            </tr>
+            {% if detail_time %}
+            <tr>
+                <td id="con">消費日期</td>
+                <td>{{ detail_time.CDATE }}</td>
+            </tr>
+            {% endif %}
+            <tr>
+                <td id="con">消費店舖</td>
+                <td>中壢中原大學店</td>
+            </tr>
+            <tr>
+                <td id="con">洗衣模式</td>
+                <td>{{ detail_id.WMODE }}</td>
+            </tr>
+            <tr>
+                <td id="con">烘衣模式</td>
+                <td>{{ detail_id.LMODE }}</td>
+            </tr>
+            <tr>
+                <td id="con">摺衣模式</td>
+                <td>{{ detail_id.FMODE }}</td>
+            </tr>
+            <tr>
+                <td id="con">鎖櫃編號</td>
+                <td>001</td>
+            </tr>
+            <tr>
+                <td id="con">香氛選擇</td>
+                <td>{{ detail_id.SMELL }}</td>
+            </tr>
+        </table>
+        {% endif %}
+        <div class="flex-cent">
+            <div class="btn">
+                <a href="/history">回到上頁</a>
+            </div>
+            <div class="btn">
+                <a href="/solve">問題回報</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

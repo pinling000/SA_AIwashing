@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="../static/pic/favicon.ico">
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/cash.css" type="text/css">
+    <title>結帳頁面</title>
+</head>
+<body>
+    <form>
+        <div class="title">
+            <h3>結帳頁面</h3>
+        </div>
+        <div class="col-8">
+            <div class="model">
+                    <div class="row">
+                        <div class="model-title" >
+                            輸入信用卡卡號
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control" type="text" placeholder="請輸入信用卡卡號" id="card-number" aria-label="default input example">
+                        </div>
+                    </div>
+            </div>
+        </div>
+            <div class="flex-cent">
+                <a href="/Delivery"><button type="button" class="btn" id="submitbtn">確認付款</button></a>
+                <a href="/order"><button type="button" class="btn">回上頁</button></a>
+            </div>
+    </form>
+    <script>
+        var pattern = /^[0-9]{16}$/;
+        document.getElementById("submitbtn").addEventListener("click", function(event){
+        var inputValue = document.getElementById("card-number").value;
+        if(!pattern.test(inputValue)){
+            event.preventDefault();
+            alert("信用卡號碼輸入錯誤，請輸入16位數字!");
+            document.getElementById("card-number").value = "";
+        }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+html,body{
+    width: 100%;
+	height: 100%;
+	font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande";
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction:row-reverse;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+.marker-cluster-small {
+    background-color: rgba(181, 226, 140, 0.6);
+    }
+    .marker-cluster-small div {
+    background-color: rgba(110, 204, 57, 0.6);
+    }
+    
+    .marker-cluster-medium {
+    background-color: rgba(241, 211, 87, 0.6);
+    }
+    .marker-cluster-medium div {
+    background-color: rgba(240, 194, 12, 0.6);
+    }
+    
+    .marker-cluster-large {
+    background-color: rgba(253, 156, 115, 0.6);
+    }
+    .marker-cluster-large div {
+    background-color: rgba(241, 128, 23, 0.6);
+    }
+    
+    .marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px;
+    }
+    .marker-cluster div {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+    text-align: center;
+    border-radius: 15px;
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+    .marker-cluster span {
+    line-height: 30px;
+    }
+    
+    .container.leaflet-right {
+    right:0px;
+    }
+
+.GeoBtn{
+    position: fixed;
+    top: 80px;
+    z-index: 999;
+    left: 5px;
+    border-radius: 30px;
+    background-color: #A3CECF;
+    color: #227078;
+    font-weight: bold;
+}
+
+.Btn{
+    position: fixed;
+    top: 108px;
+    z-index: 999;
+    left: 5px;
+    border-radius: 30px;
+    background-color: #A3CECF;
+    color: #227078;
+    font-weight: bold;
+}
+
+/* Popup 內資訊的樣式設定 */
+
+.panelMaskNum{
+    padding: 20px 0 10px 0; 
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.infoLayout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupInfo p{
+    margin:0 !important;
+}
+
+.popupLayout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupInfo hr{
+    border:0.5px solid #072e00;
+}
+
+.popupTitle{
+    font-size: 20px;
+    font-weight: 900;
+    color:#072e00;
+}
+
+.popupTitle span{
+    padding-left: 5px;
+}
+
+.popupText{
+    color: #072e00;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.popupNote{
+    padding-top: 5px;
+    font-size: 10px;
+    color: rgb(125, 125, 125);
+}
+
+.popupMaskNum{
+    margin:0 !important;
+}
+
+.pop-style{
+    font-size: 1.3em;
+}
+
+.popupBtn{
+    display:flex;
+    justify-content:flex-end;
+}
+
+/* 數量判斷後，相對應的背景顏色 */
+
+.bg-sufficient{
+    color:white;
+    background-color: #63cf9c;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    margin-bottom:5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0,0.6);
+}
+
+.bg-insufficient{
+    color:white;
+    background-color: #FAB3A9;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    margin-bottom:5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0,0.6);
+}
+
+.bg-none{
+    color:white;
+    background-color: #B4BDC1;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    margin-bottom:5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0,0.6);
+}

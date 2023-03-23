@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/pic/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/solve.css" type="text/css">
+    <title>問題回報</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-col">
+            <h1>問題回報</h1>
+        </div>
+    </div>
+    <div class="container-1">
+        <form name="問題回報" method="post" action="/" required="required">
+            {% csrf_token %}
+            <ul>
+                <li>問題類型</li>
+                <select class="qtype" name="qtype" >
+                    <option value="">請選擇問題類型</option>
+                    <option value="送洗衣物遺失">送洗衣物遺失</option>
+                    <option value="衣物損壞">衣物損壞</option>
+                    <option value="其他">其他</option>
+                </select>
+                <li>問題詳細描述</li>
+                <textarea class="qst" name="qtext" cols="26" rows="12" placeholder="請在此輸入問題描述"></textarea>
+            </ul>
+            <div class="flex-cent">
+                <input type="submit" value="送出">
+                <a href="/detail">回到上頁</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="../static/pic/favicon.ico">
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/setpreference.css" type="text/css">
+    <title>設定偏好</title>
+</head>
+<body>
+    <div class="title">
+        <h3>我的偏好</h3>
+    </div>
+    <div class="container" id="content">
+        <div class="col-8">
+                <div class="model">
+                    <div class="model-title">
+                        <div class="model-text">
+                            模式一 
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="wish">
+                                <div class="wish-text">
+                                    洗衣模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                標準
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                精緻洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                柔洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                快洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                            <div class="dry">
+                                <div class="dry-text">
+                                    乾燥模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-1" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                日曬
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-1" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                低溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-1" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                中溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-1" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                高溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                            <div class="fold">
+                                <div class="fold-text">
+                                    摺衣模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-2" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                不摺
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-2" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                機器人
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-8">
+                <div class="model">
+                    <div class="model-title">
+                        <div class="model-text">
+                            模式二 
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="wish">
+                                <div class="wish-text">
+                                    洗衣模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-3" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                標準
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-3" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                精緻洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-3" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                柔洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-3" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                快洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                            <div class="dry">
+                                <div class="dry-text">
+                                    乾燥模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-4" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                日曬
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-4" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                低溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-4" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                中溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-4" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                高溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                            <div class="fold">
+                                <div class="fold-text">
+                                    摺衣模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-5" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                不摺
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-5" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                機器人
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-8">
+                <div class="model">
+                    <div class="model-title">
+                        <div class="model-text">
+                            模式三 
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="wish">
+                                <div class="wish-text">
+                                    洗衣模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-6" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                標準
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-6" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                精緻洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-6" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                柔洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-6" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                快洗
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                            <div class="dry">
+                                <div class="dry-text">
+                                    乾燥模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-7" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                日曬
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-7" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                低溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-7" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                中溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-7" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                高溫烘乾
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                            <div class="fold">
+                                <div class="fold-text">
+                                    摺衣模式
+                                </div>
+                                <from>
+                                    <div class="row">
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-8" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                不摺
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=col>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios-8" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                機器人
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </from>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+    <div class="flex-cent">
+        <button type="button" class="btn">確認修改</button>
+        <a href="/"><button type="button" class="btn">回首頁</button></a>
+    </div>
+</body>
+</html>

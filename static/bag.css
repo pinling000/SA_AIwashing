@@ -1,0 +1,75 @@
+/* 排版1 */
+.container{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-col{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 5rem;
+    color: white;
+}
+
+/* 排版2 阿巴阿巴巴啊啊aaaa*/
+.container-1{
+    width: 100vw;
+    /* height: 70vh; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* max-width: 80rem; */
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #F1FDFF;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    border-bottom-left-radius:25%;
+    border-bottom-right-radius:25%;
+    border-bottom: 0.2rem solid #247B84;
+    font-size: 1.8rem;
+    color:#247B84;
+    padding:1.2rem 0.8rem;
+}
+
+td{
+    padding: 3.8rem 0 0 0;
+    font-size: 1.27rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    font-size: 2.8rem;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #247B84;
+    background-color: #C1DEDF;
+    border-radius: 38px;
+}
+

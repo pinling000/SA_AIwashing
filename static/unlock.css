@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family:'Martian Mono', "微軟正黑體","Segoe UI",monospace;
+}
+
+body{
+    background: linear-gradient(45deg,#a3cecf8d 25%, #A3CECF 0, #A3CECF 50%,#a3cecf8d 0, #a3cecf8d 75%, #A3CECF 0);;
+    background-position:center center;
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* 排版1 */
+.flex-col{ 
+    display: flex;
+    justify-content: center;
+}
+
+.flex-cent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.avatar{
+    max-width: 100%;
+    width: 30%;
+    margin:0 2rem;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+h2{
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+.bar-container {
+    width: 17rem;
+    height: 0.5rem;
+    border-radius: 25px;
+    background: #eee;
+}
+
+.bar-progress{
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background:#247B84;
+}
+
+.container-1{
+    width: 100vw;
+    /* height: 70vh; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* max-width: 80rem; */
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #F1FDFF;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+}
+
+/* 排版2 */
+.flex-col-1{ 
+    display: flex;
+    justify-content:space-evenly
+}
+
+.flex-cent-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul{
+    margin:1.5rem 0 ;
+}
+
+li{
+    list-style:none;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #247B84;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.flower{
+    max-width: 100%;
+    width: 25%;
+}
+
+hr{
+    width: 35rem;
+    border: #247B84 0.01rem solid;
+}
+
+input{
+    border-radius: 30px;
+    padding: 0.3rem 1rem ;
+    color: white;
+    background-color: #247B84;
+    caret-color: #247B84;
+    border:none;
+}
+
+.btn{
+    font-size: 2.8rem;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #247B84;
+    background-color: #C1DEDF;
+    border-radius: 38px;
+}
